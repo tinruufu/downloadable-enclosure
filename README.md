@@ -1,0 +1,6 @@
+- clone and `cd` to the repo
+- make a virtualenv, if you're so inclined
+- `pip install -r requirements.txt` (sudo if you need it)
+- `python gen.py > dlc.xml`
+- copy `dlc.xml` to somewhere your podcast client can see it
+- subscribe to it
