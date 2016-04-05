@@ -11,7 +11,7 @@ def make_feed():
         requests.get('http://dlc.invincible.ink/feed/').content
     )
     for item in tree.find('channel').findall('item'):
-        if item.find('enclosure') is None:
+        if item.find('enclosure') is not None:
             continue
 
         soup = BeautifulSoup(item.find(NS.format('encoded')).text, 'lxml')
